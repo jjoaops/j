@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.75rem;
+  --background: #111827;
+  --foreground: #f9fafb;
+  --card: #1a2333;
+  --card-foreground: #f9fafb;
+  --popover: #1a2333;
+  --popover-foreground: #f9fafb;
+  --primary: #60a5fa;
+  --primary-foreground: #0f172a;
+  --secondary: #1e293b;
+  --secondary-foreground: #f9fafb;
+  --muted: #1e2d3d;
+  --muted-foreground: #94a3b8;
+  --accent: #7dd3fc;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #f9fafb;
+  --border: rgba(100, 130, 200, 0.25);
+  --input: rgba(100, 130, 200, 0.25);
+  --ring: #60a5fa;
+  --neon: #93c5fd;
+  --neon-cyan: #bae6fd;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Inter", system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-gradient-neon {
+    background: linear-gradient(120deg, #bae6fd, #60a5fa, #818cf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-grid {
+    background-image: linear-gradient(rgba(100, 130, 200, 0.18) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(100, 130, 200, 0.18) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .glow-ring {
+    box-shadow: 0 0 0 1px rgba(96, 165, 250, 0.4), 0 10px 40px -10px rgba(96, 165, 250, 0.5);
+  }
+}
