@@ -189,7 +189,7 @@ export function CTA() {
               Fale agora com a JJ Agency e receba uma proposta personalizada em até 24 horas.
             </p>
             <a
-              href="https://w.app/awuq6v"
+              href="https://wa.me/5596976060577?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
